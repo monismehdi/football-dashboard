@@ -1,0 +1,23 @@
+<table class="table">
+  <thead class="thead-default">
+    <tr>
+      <th>Match Day</th>
+      <th>Home Team</th>
+      <th>Away Team</th>
+      <th>Status</th>
+      <th>Goals Home Team</th>
+      <th>Goals Away Team</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of items">
+      <th scope="row">{{item.matchday}}</th>
+      <td>{{item.homeTeamName}}</td>
+      <td>{{item.awayTeamName}}</td>
+      <td>{{item.status}}</td>
+      <td>{{item.goalsHomeTeam}}</td>
+      <td>{{item.goalsAwayTeam}}</td>
+    </tr>
+  </tbody>
+</table>
+

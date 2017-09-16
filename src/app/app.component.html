@@ -1,3 +1,14 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="navbar navbar-light bg-faded">
+  <a class="navbar-brand"  [routerLink]="['competitions']">Football Dashboard</a>
+  <ul class="nav navbar-nav mx-auto">
+    <li class="nav-item">
+      <h4 class="navbar-text">
+        <strong>{{getNavBarText()}}</strong>
+      </h4>
+    </li>
+  </ul>
+</nav>
+
+<div class="container-fluid">
+  <router-outlet></router-outlet>
+</div>
